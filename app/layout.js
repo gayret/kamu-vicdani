@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
         <footer>
           <p>
             Kamu Vicdanı, içerikleri{" "}
-            <a href="https://github.com/gayret/kamu-vicdani/blob/main/app/data.js">
+            <a href="https://github.com/gayret/kamu-vicdani/blob/main/app/data.json">
               ziyaretçiler tarafından sağlanan
             </a>{" "}
             özgür bir platformdur.
