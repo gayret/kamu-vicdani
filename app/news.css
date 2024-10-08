@@ -1,0 +1,29 @@
+.news {
+  background-color: #f4f4f4;
+  margin: auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.news-item {
+  background-color: #fff;
+  padding: 0.4rem 1rem;
+  height: max-content;
+}
+
+.logs {
+  font-size: 0.9rem;
+  border-left: 1px solid #ccc;
+  padding-left: 1rem;
+  color: #000;
+}
+
+.news h2 {
+  margin: 0;
+}
+
+.news .location {
+  margin: 0;
+}

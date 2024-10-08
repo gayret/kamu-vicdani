@@ -1,0 +1,39 @@
+@import url(./news.css);
+
+html {
+  font-size: 14px;
+  font-family: sans-serif;
+  color: #222;
+}
+
+body {
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+  height: 100dvh;
+  margin: 0;
+  gap: 1rem;
+}
+
+header {
+  background-color: rgb(225, 225, 225);
+  position: sticky;
+  top: 0;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 0;
+}
+
+header p {
+  margin-top: 0;
+}
+
+footer {
+  padding: 0.5rem;
+  font-size: 0.7rem;
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "title": "Taksici katili",
+    "description": "Geç saatlerde üşümesin diye Oğuz Erge tarafından taksiye alınan, Delil Aysal'ın taksiciyi sırtından vurarak öldürmesi olayı.",
+    "slug": "taksici-katili",
+    "created": "8 Ekim 2024 - 15:35",
+    "updated": "8 Ekim 2024 - 15:35",
+    "suspects": ["Delil Aysal"],
+    "victims": ["Oğuz Erge"],
+    "location": "Gaziemir / İzmir",
+    "logs": [
+      {
+        "source": "https://www.birgun.net/haber/taksici-oguz-ergenin-katili-hakim-karsisina-cikti-507038",
+        "date": "16 Şubat 2024 - 12:16",
+        "description": "Delil Aysal ilk kez hakim karşısına çıktı. Mahkeme heyeti, Delil Aysal hakkında cezai ehliyet raporu talep ederek tutukluluk haline devam kararı verdi. Duruşmayı 8 Mart 2024 tarihine erteledi."
+      },
+      {
+        "source": "https://www.hurriyet.com.tr/gundem/taksici-oguz-ergeyi-oldurmustu-katil-delil-aysalin-cezasi-belli-oldu-42419465",
+        "date": "8 Mart 2024 - 11:35",
+        "description": "Oğuz Erge'yi (44) öldüren Delil Aysal'ın (19) yargılandığı davada karar çıktı. Sanık Delil Aysal, ağırlaştırılmış müebbet ve 17 yıl 8 ay hapis cezasına çarptırıldı."
+      }
+    ]
+  }
+]
