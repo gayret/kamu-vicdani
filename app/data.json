@@ -21,4 +21,26 @@
       }
     ]
   }
+    {
+    "title": "Sıla Bebek",
+    "description": "Tekirdağ'ın Malkara ilçesinde şiddet ve cinsel istismara uğrayan 2 yaşındaki Sıla bebeğin öldürülmesi.",
+    "slug": "anne-katil",
+    "created": "8 Ekim 2024 - 18:04",
+    "updated": "8 Ekim 2024 - 18:04",
+    "suspects": [" B.Y. (25), S.Ö. (57), K.A. (32), K.A (13), G.K (14) "],
+    "victims": ["Sıla Bebek"],
+    "location": "Tekirdağ / Malkara",
+    "logs": [
+      {
+        "source": "https://www.milliyet.com.tr/gundem/son-dakika-tekirdagda-cinsel-istismara-ugrayan-sila-bebek-hayatini-kaybetti-7204774",
+        "date": "7 Ekim 2024 - 13:01",
+        "description": "Tekirdağ'ın Malkara ilçesinde şiddet ve cinsel istismara uğrayan 2 yaşındaki Sıla Yeniçeri'nin, tedavi gördüğü hastanede hayatını kaybettiği bildirildi."
+      },
+      {
+        "source": "https://www.hurriyet.com.tr/gundem/sila-bebek-son-yolculuguna-ugurlaniyor-teyzeleri-gozyaslarina-boguldu-42556249",
+        "date": "8 Ekim 2024 - 17:34",
+        "description": "Sıla bebeğin mezarında dikkat çeken detay! Cenazede kahreden feryat: Nasıl kıydılar yavruma..."
+      }
+    ]
+  }
 ]
