@@ -1,7 +1,6 @@
 .news {
-  background-color: #f4f4f4;
   margin: auto;
-  padding: 1rem;
+  padding-inline: 1rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
@@ -9,8 +8,15 @@
 
 .news-item {
   background-color: #fff;
-  padding: 0.4rem 1rem;
+  padding: 1rem;
   height: max-content;
+  display: grid;
+  place-content: center;
+  gap: 1rem;
+}
+
+.news-item p {
+  margin: 0;
 }
 
 .logs {
@@ -18,6 +24,8 @@
   border-left: 1px solid #ccc;
   padding-left: 1rem;
   color: #000;
+  display: grid;
+  gap: 1rem;
 }
 
 .news h2 {
