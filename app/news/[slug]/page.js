@@ -57,7 +57,6 @@ export default async function News({ params }) {
         <a
           href="https://airtable.com/appGCdm8zSGJP5ydL/pagzYQZwNN4wWmVwJ/form"
           className="btn"
-          target="_blank"
         >
           + Yeni gelişme ekle
         </a>
