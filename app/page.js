@@ -1,5 +1,6 @@
 import { fetchAirtableTable } from "./lib/airtable";
 import { formatDateTime } from "./lib/formatDate";
+import Link from "next/link";
 
 export const revalidate = 60;
 
@@ -27,7 +28,9 @@ export default async function Home() {
         {data &&
           data.map((item, index) => (
             <div className="news-item" key={index}>
-              <h2>{item.title}</h2>
+              <Link href={`/news/${item.slug}`}>
+                <h2>{item.title}</h2>
+              </Link>
               <p className="location">{item.location}</p>
               <p>
                 <strong>Son güncelleme</strong>: {formatDateTime(item.updated)}

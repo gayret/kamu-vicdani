@@ -1,4 +1,5 @@
 import "./globals.css";
+import Link from "next/link";
 
 export const metadata = {
   title: "Kamu Vicdanı",
@@ -10,7 +11,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <header>
-          <h1>Kamu Vicdanı</h1>
+          <Link href="/">
+            <h1>Kamu Vicdanı</h1>
+          </Link>
           <p>Halkın vicdanını sızlatan olaylar, failler ve akıbetleri</p>
         </header>
 

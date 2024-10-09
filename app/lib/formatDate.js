@@ -7,6 +7,7 @@ function formatDateTime(date) {
     day: "numeric",
     hour: "numeric",
     minute: "numeric",
+    timeZone: "Europe/Istanbul",
   }).format(payload);
 }
 

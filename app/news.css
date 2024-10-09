@@ -35,3 +35,23 @@
 .news .location {
   margin: 0;
 }
+
+.news-detail {
+  background-color: #fff;
+  max-width: 400px;
+  padding: 1rem;
+  margin: 1rem;
+  margin-inline: auto;
+}
+
+.news-detail h1 {
+  margin: 0;
+}
+
+.news-detail .logs {
+  margin-top: 2rem;
+}
+
+.logs p {
+  margin: 0;
+}
