@@ -21,12 +21,6 @@ export default function RootLayout({ children }) {
 
         <footer>
           <p>
-            <a href="https://github.com/gayret" target="_blank">
-              Safa Gayret
-            </a>{" "}
-            tarafından geliştirildi.
-          </p>
-          <p>
             Kamu Vicdanı, içerikleri{" "}
             <a href="https://github.com/gayret/kamu-vicdani" target="_blank">
               ziyaretçiler tarafından sağlanan
