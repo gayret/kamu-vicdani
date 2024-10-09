@@ -13,6 +13,7 @@
   display: grid;
   place-content: center;
   gap: 1rem;
+  border: 1px solid lightgray;
 }
 
 .news-item p {
@@ -28,7 +29,7 @@
   gap: 1rem;
 }
 
-.news h2 {
+.news h3 {
   margin: 0;
 }
 
@@ -40,7 +41,7 @@
   background-color: #fff;
   max-width: 400px;
   padding: 1rem;
-  margin: 1rem;
+  margin-inline: 1rem;
   margin-inline: auto;
 }
 

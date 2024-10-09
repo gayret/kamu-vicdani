@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
       <body>
         <header>
           <Link href="/">
-            <h1>Kamu Vicdanı</h1>
+            <h2>Kamu Vicdanı</h2>
           </Link>
           <p>Halkın vicdanını sızlatan olaylar, failler ve akıbetleri</p>
         </header>

@@ -29,7 +29,7 @@ export default async function Home() {
           data.map((item, index) => (
             <div className="news-item" key={index}>
               <Link href={`/news/${item.slug}`}>
-                <h2>{item.title}</h2>
+                <h3>{item.title}</h3>
               </Link>
               <p className="location">{item.location}</p>
               <p>
