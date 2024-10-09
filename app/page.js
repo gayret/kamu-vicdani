@@ -56,7 +56,6 @@ export default async function Home() {
                 <a
                   href="https://airtable.com/appGCdm8zSGJP5ydL/pagzYQZwNN4wWmVwJ/form"
                   className="btn"
-                  target="_blank"
                 >
                   + Yeni gelişme ekle
                 </a>
@@ -68,7 +67,6 @@ export default async function Home() {
           <a
             href="https://airtable.com/appGCdm8zSGJP5ydL/pagSAXkdbeAxobZu0/form"
             className="btn"
-            target="_blank"
           >
             + Yeni haber ekle
           </a>
