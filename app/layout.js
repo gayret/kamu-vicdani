@@ -20,11 +20,24 @@ export default function RootLayout({ children }) {
         <main>{children}</main>
 
         <footer>
+          <ul className="links">
+            <li>
+              <Link href="/">Haberler</Link>
+            </li>
+
+            <li>
+              <Link href="/about">Hakkımızda</Link>
+            </li>
+
+            <li>
+              <Link href="/contact">İletişim</Link>
+            </li>
+          </ul>
           <p>
             Kamu Vicdanı, içerikleri{" "}
-            <a href="https://github.com/gayret/kamu-vicdani" target="_blank">
+            <Link href="https://github.com/gayret/kamu-vicdani" target="_blank">
               ziyaretçiler tarafından sağlanan
-            </a>{" "}
+            </Link>{" "}
             özgür bir platformdur.
           </p>
         </footer>
