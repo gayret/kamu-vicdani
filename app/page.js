@@ -6,7 +6,7 @@ import Link from "next/link";
 export const revalidate = 60;
 
 export default async function Home() {
-  const data = await fetchAirtableTable("news");
+  const data = (await fetchAirtableTable("news")).reverse();
   const logs = await fetchAirtableTable("news_logs");
 
   data.forEach((news) => {
