@@ -25,6 +25,8 @@ header {
   position: sticky;
   top: 0;
   text-align: center;
+  z-index: 1;
+  font-size: 0.9rem;
 }
 
 header h2 {
