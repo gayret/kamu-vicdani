@@ -1,16 +1,17 @@
 .search {
   display: grid;
-  place-content: center;
   position: relative;
   padding-block: 0.5rem;
+  width: 100%;
 }
 
 .search-input {
-  width: 300px;
+  width: 100%;
   margin-inline: auto;
-  padding: 0.2rem;
+  padding: 0.5rem 1rem;
   outline: none;
   border: 2px solid #ccc;
+  border-radius: 0.3rem;
 }
 
 .search-input:focus {
@@ -19,13 +20,16 @@
 
 .search-results {
   background-color: #fff;
-  padding: 1rem;
-  width: 300px;
+  padding-inline: 1rem;
+  max-width: 300px;
   position: absolute;
   top: 100%;
+  left: 1rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .search-results ul {
   padding-inline: 1rem;
+  display: grid;
+  gap: 1rem;
 }

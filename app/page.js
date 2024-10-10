@@ -25,18 +25,37 @@ export default async function Home() {
 
   return (
     <>
-      <section className="add-news">
-        <Link
-          href="https://airtable.com/appGCdm8zSGJP5ydL/pagSAXkdbeAxobZu0/form"
-          className="btn"
-        >
-          + Yeni haber ekle
-        </Link>
-      </section>
-      <section className="search">
-        <Search data={data} />
-      </section>
       <section className="news">
+        <div className="news-item static-widget">
+          <strong>Kamu Vicdanı</strong>
+
+          <p>
+            Kar amacı gütmeyen bir platformdur, içerikleri ziyaretçiler
+            tarafından oluştururlur.
+          </p>
+          <p>
+            İçerikler yorum içermez, kaynaklarda geçen ifadelerden fazlasına yer
+            verilmez.
+          </p>
+          <p>
+            Haber eklemek isterseniz, daha önce platformda olup olmadığını
+            kontrol edin.
+          </p>
+          <Search data={data} />
+          <p>
+            Eğer aradığınız haber platformda yer almıyorsa, oluşturabilirsiniz.
+          </p>
+          <Link
+            href="https://airtable.com/appGCdm8zSGJP5ydL/pagSAXkdbeAxobZu0/form"
+            className="btn"
+          >
+            + Yeni haber ekle
+          </Link>
+          <p>
+            Platformun tüm detayları ziyaretçiler tarafından yeniden
+            kurgulanabilir. Açık kaynak standartlarında geliştirilmiştir.
+          </p>
+        </div>
         {data &&
           data.map((item, index) => (
             <div className="news-item" key={index}>

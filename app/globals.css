@@ -64,6 +64,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  line-height: 1.4;
+}
+
 .btn {
   padding: 0.5rem 1rem;
   border: 1px solid #ccc;
@@ -105,4 +109,8 @@ a {
 .add-news {
   padding: 0.5rem 1rem;
   text-align: right;
+}
+
+.static-widget {
+  border-color: transparent;
 }
