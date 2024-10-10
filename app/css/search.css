@@ -1,0 +1,21 @@
+.search {
+  display: grid;
+  place-content: center;
+  padding-bottom: 1rem;
+}
+
+.search-input {
+  width: 300px;
+  margin-inline: auto;
+}
+
+.search-results {
+  background-color: #fff;
+  margin-top: 1rem;
+  padding: 1rem;
+  width: 300px;
+}
+
+.search-results ul {
+  padding-inline: 1rem;
+}

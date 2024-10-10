@@ -3,15 +3,14 @@
   padding-inline: 1rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: start;
   gap: 1rem;
 }
 
 .news-item {
   background-color: #fff;
   padding: 1rem;
-  height: max-content;
   display: grid;
-  place-content: center;
   gap: 1rem;
   border: 1px solid lightgray;
 }

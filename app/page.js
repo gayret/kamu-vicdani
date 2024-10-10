@@ -1,3 +1,4 @@
+import Search from "./components/Search/search";
 import { fetchAirtableTable } from "./lib/airtable";
 import { formatDateTime } from "./lib/formatDate";
 import Link from "next/link";
@@ -24,6 +25,9 @@ export default async function Home() {
 
   return (
     <>
+      <section className="search">
+        <Search data={data} />
+      </section>
       <section className="news">
         {data &&
           data.map((item, index) => (
@@ -33,7 +37,10 @@ export default async function Home() {
               </Link>
               <p className="location">{item.location}</p>
               <p>
-                <strong>Son güncelleme</strong>: {formatDateTime(item.updated)}
+                <i>
+                  <strong>Son güncelleme</strong>:{" "}
+                  {formatDateTime(item.updated)}
+                </i>
               </p>
               <p>
                 <strong>Zanlı(lar)</strong>: {item.suspects}

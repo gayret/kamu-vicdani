@@ -1,4 +1,9 @@
-@import url(./news.css);
+@import url(./css/news.css);
+@import url(./css/search.css);
+
+* {
+  box-sizing: border-box;
+}
 
 html {
   font-size: 14px;
