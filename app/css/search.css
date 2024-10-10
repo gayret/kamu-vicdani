@@ -2,18 +2,28 @@
   display: grid;
   place-content: center;
   padding-bottom: 1rem;
+  position: relative;
 }
 
 .search-input {
   width: 300px;
   margin-inline: auto;
+  padding: 0.2rem;
+  outline: none;
+  border: 2px solid #ccc;
+}
+
+.search-input:focus {
+  border-color: rgb(35, 168, 221);
 }
 
 .search-results {
   background-color: #fff;
-  margin-top: 1rem;
   padding: 1rem;
   width: 300px;
+  position: absolute;
+  top: 80%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .search-results ul {
