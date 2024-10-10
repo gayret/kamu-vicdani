@@ -1,8 +1,8 @@
 .search {
   display: grid;
   place-content: center;
-  padding-bottom: 1rem;
   position: relative;
+  padding-block: 0.5rem;
 }
 
 .search-input {
@@ -22,7 +22,7 @@
   padding: 1rem;
   width: 300px;
   position: absolute;
-  top: 80%;
+  top: 100%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 

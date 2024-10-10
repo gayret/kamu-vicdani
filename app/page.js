@@ -25,6 +25,14 @@ export default async function Home() {
 
   return (
     <>
+      <section className="add-news">
+        <Link
+          href="https://airtable.com/appGCdm8zSGJP5ydL/pagSAXkdbeAxobZu0/form"
+          className="btn"
+        >
+          + Yeni haber ekle
+        </Link>
+      </section>
       <section className="search">
         <Search data={data} />
       </section>
@@ -60,24 +68,15 @@ export default async function Home() {
                       {log.description}
                     </p>
                   ))}
-                <a
+                <Link
                   href="https://airtable.com/appGCdm8zSGJP5ydL/pagzYQZwNN4wWmVwJ/form"
                   className="btn"
                 >
                   + Yeni gelişme ekle
-                </a>
+                </Link>
               </div>
             </div>
           ))}
-
-        <div className="news-item">
-          <a
-            href="https://airtable.com/appGCdm8zSGJP5ydL/pagSAXkdbeAxobZu0/form"
-            className="btn"
-          >
-            + Yeni haber ekle
-          </a>
-        </div>
       </section>
     </>
   );
