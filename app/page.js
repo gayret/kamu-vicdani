@@ -51,10 +51,6 @@ export default async function Home() {
           >
             + Yeni haber ekle
           </Link>
-          <p>
-            Platformun tüm detayları ziyaretçiler tarafından yeniden
-            kurgulanabilir. Açık kaynak standartlarında geliştirilmiştir.
-          </p>
         </div>
         {data &&
           data.map((item, index) => (

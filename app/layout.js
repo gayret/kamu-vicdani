@@ -30,6 +30,10 @@ export default function RootLayout({ children }) {
             </li>
 
             <li>
+              <Link href="/disclaimers">Sorumluluk reddi beyanı</Link>
+            </li>
+
+            <li>
               <Link href="/contact">İletişim</Link>
             </li>
           </ul>
