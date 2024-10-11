@@ -1,6 +1,8 @@
 import { fetchAirtableTable } from "@/app/lib/airtable";
 import { formatDateTime } from "@/app/lib/formatDate";
 import Link from "next/link";
+import locationSvg from "../../img/location-sign.svg";
+import Image from "next/image";
 
 export const revalidate = 60;
 
@@ -30,7 +32,16 @@ export default async function News({ params }) {
   return (
     <div className="news-detail">
       <h1>{news.title}</h1>
-      <p>{news.location}</p>
+      <p>
+        <Image
+          src={locationSvg}
+          alt="Location"
+          className="location-svg"
+          width={12}
+          height={12}
+        />
+        {news.location}
+      </p>
       <p>
         <strong>Son güncelleme</strong>: {formatDateTime(news.updated)}
       </p>

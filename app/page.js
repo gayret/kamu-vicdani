@@ -2,6 +2,8 @@ import Search from "./components/Search/search";
 import { fetchAirtableTable } from "./lib/airtable";
 import { formatDateTime } from "./lib/formatDate";
 import Link from "next/link";
+import locationSvg from "./img/location-sign.svg";
+import Image from "next/image";
 
 export const revalidate = 60;
 
@@ -27,23 +29,13 @@ export default async function Home() {
     <>
       <section className="news">
         <div className="news-item static-widget">
-          <strong>Kamu Vicdanı</strong>
-
           <p>
-            Kar amacı gütmeyen bir platformdur, içerikleri ziyaretçiler
-            tarafından oluştururlur.
-          </p>
-          <p>
-            İçerikler yorum içermez, kaynaklarda geçen ifadelerden fazlasına yer
-            verilmez.
-          </p>
-          <p>
-            Haber eklemek isterseniz, daha önce platformda olup olmadığını
+            Haber eklemek isterseniz, haberin platformda bulunup bulunmadığını
             kontrol edin.
           </p>
           <Search data={data} />
           <p>
-            Eğer aradığınız haber platformda yer almıyorsa, oluşturabilirsiniz.
+            Eğer aradığınız haber platformda yer almıyorsa oluşturabilirsiniz.
           </p>
           <Link
             href="https://airtable.com/appGCdm8zSGJP5ydL/pagSAXkdbeAxobZu0/form"
@@ -58,21 +50,15 @@ export default async function Home() {
               <Link href={`/news/${item.slug}`}>
                 <h3>{item.title}</h3>
               </Link>
-              <p className="location">{item.location}</p>
-              <p>
-                <i>
-                  <strong>Son güncelleme</strong>:{" "}
-                  {formatDateTime(item.updated)}
-                </i>
-              </p>
-              <p>
-                <strong>Zanlı(lar)</strong>: {item.suspects}
-              </p>
-              <p>
-                <strong>Kurban(lar)</strong>: {item.victims}
-              </p>
-              <p>
-                <strong>Özet</strong>: {item.description}
+              <p className="location">
+                <Image
+                  className="location-svg"
+                  src={locationSvg}
+                  alt="location"
+                  width={12}
+                  height={12}
+                />
+                {item.location}
               </p>
               <div className="logs">
                 <strong>Gelişmeler</strong>

@@ -114,3 +114,7 @@ p {
 .static-widget {
   border-color: transparent;
 }
+
+.location-svg {
+  margin-right: 0.2rem;
+}

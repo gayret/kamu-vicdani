@@ -1,18 +1,18 @@
 .news {
-  margin: auto;
+  columns: 300px;
+  column-gap: 1rem;
   padding-inline: 1rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  align-items: start;
-  gap: 1rem;
 }
 
 .news-item {
+  break-inside: avoid;
   background-color: #fff;
   padding: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
   display: grid;
-  gap: 1rem;
-  border: 1px solid lightgray;
+  gap: 0.5rem;
+  border: 1px solid #ccc;
 }
 
 .news-item p {
@@ -22,10 +22,11 @@
 .logs {
   font-size: 0.9rem;
   border-left: 1px solid #ccc;
-  padding-left: 1rem;
   color: #000;
   display: grid;
   gap: 1rem;
+  background-color: #f4f4f4;
+  padding: 0.5rem;
 }
 
 .news h3 {
@@ -46,10 +47,6 @@
 
 .news-detail h1 {
   margin: 0;
-}
-
-.news-detail .logs {
-  margin-top: 2rem;
 }
 
 .logs p {
