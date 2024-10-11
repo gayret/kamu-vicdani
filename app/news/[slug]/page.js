@@ -2,6 +2,8 @@ import { fetchAirtableTable } from "@/app/lib/airtable";
 import { formatDateTime } from "@/app/lib/formatDate";
 import Link from "next/link";
 
+export const revalidate = 60;
+
 export default async function News({ params }) {
   const data = await fetchAirtableTable("news");
 
