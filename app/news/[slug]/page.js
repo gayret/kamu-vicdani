@@ -24,10 +24,20 @@ export default async function News({ params }) {
           source: log.source,
           date: log.date,
           description: log.title,
+          created: log.created,
         });
       }
     });
   });
+
+  function getSource(source) {
+    const url = new URL(source);
+    if (url.hostname.includes("www")) {
+      return url.hostname.split(".")[1].toUpperCase();
+    } else {
+      return url.hostname;
+    }
+  }
 
   return (
     <div className="news-detail">
@@ -62,10 +72,17 @@ export default async function News({ params }) {
         <strong>Gelişmeler</strong>
         {news.logs &&
           news.logs.map((log, index) => (
-            <p className="log-items" key={index}>
-              <a href={log.source}>{formatDateTime(log.date)}</a> -{" "}
-              {log.description}
-            </p>
+            <div className="log-items" key={index}>
+              <div className="log-item" key={index}>
+                <div className="log-item-header">
+                  <a href={log.source}>
+                    <span className="source">{getSource(log.source)}</span>
+                  </a>
+                  <span className="date">{formatDateTime(log.created)}</span>
+                </div>
+                <span className="description">{log.description}</span>
+              </div>
+            </div>
           ))}
         <a
           href="https://airtable.com/appGCdm8zSGJP5ydL/pagzYQZwNN4wWmVwJ/form"
