@@ -25,7 +25,7 @@
   color: #000;
   display: grid;
   gap: 1rem;
-  background-color: #f4f4f4;
+  background-color: #f8f8f8;
   padding: 0.5rem;
 }
 
@@ -51,4 +51,24 @@
 
 .logs p {
   margin: 0;
+}
+
+.log-item {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+}
+.log-item-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.source {
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.date {
+  font-size: 0.8rem;
+  color: #888;
 }

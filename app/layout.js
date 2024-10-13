@@ -39,7 +39,7 @@ export default function RootLayout({ children }) {
           </ul>
           <p>
             Kamu Vicdanı, içerikleri{" "}
-            <Link href="https://github.com/gayret/kamu-vicdani" target="_blank">
+            <Link href="https://github.com/gayret/kamu-vicdani">
               ziyaretçiler tarafından sağlanan
             </Link>{" "}
             özgür bir platformdur.

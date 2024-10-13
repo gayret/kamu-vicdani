@@ -20,10 +20,20 @@ export default async function Home() {
           source: log.source,
           date: log.date,
           description: log.title,
+          created: log.created,
         });
       }
     });
   });
+
+  function getSource(source) {
+    const url = new URL(source);
+    if (url.hostname.includes("www")) {
+      return url.hostname.split(".")[1].toUpperCase();
+    } else {
+      return url.hostname;
+    }
+  }
 
   return (
     <>
@@ -64,10 +74,19 @@ export default async function Home() {
                 <strong>Gelişmeler</strong>
                 {item.logs &&
                   item.logs.map((log, index) => (
-                    <p className="log-item" key={index}>
-                      <a href={log.source}>{formatDateTime(log.date)}</a> -{" "}
-                      {log.description}
-                    </p>
+                    <div className="log-item" key={index}>
+                      <div className="log-item-header">
+                        <a href={log.source}>
+                          <span className="source">
+                            {getSource(log.source)}
+                          </span>
+                        </a>
+                        <span className="date">
+                          {formatDateTime(log.created)}
+                        </span>
+                      </div>
+                      <span className="description">{log.description}</span>
+                    </div>
                   ))}
                 <Link
                   href="https://airtable.com/appGCdm8zSGJP5ydL/pagzYQZwNN4wWmVwJ/form"
