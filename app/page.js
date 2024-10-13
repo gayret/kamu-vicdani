@@ -8,7 +8,7 @@ import Image from "next/image";
 export const revalidate = 60;
 
 export default async function Home() {
-  const data = (await fetchAirtableTable("news")).reverse();
+  const data = await fetchAirtableTable("news");
   const logs = await fetchAirtableTable("news_logs");
 
   data.forEach((news) => {
