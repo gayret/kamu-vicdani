@@ -28,6 +28,7 @@
 
 .news h3 {
   margin: 0;
+  line-height: 1.4;
 }
 
 .news .location {
@@ -40,6 +41,10 @@
   padding: 1rem;
   margin-inline: 1rem;
   margin-inline: auto;
+}
+
+.news span.description {
+  line-height: 1.5;
 }
 
 .news-detail h1 {
