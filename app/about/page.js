@@ -4,8 +4,7 @@ export default function About() {
       <h1>Hakkımızda</h1>
       <h2>Nedir</h2>
       <p>
-        Kamu Vicdanı, kar amacı gütmeyen bir platformdur, içerikleri
-        ziyaretçiler tarafından sağlanır.
+        Kamu Vicdanı, içerikleri ziyaretçiler tarafından sağlanan özgür bir platformdur.
       </p>
       <p>İçerikleri gibi kodları da ziyaretçiler tarafından güncellenir.</p>
 
