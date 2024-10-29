@@ -6,6 +6,19 @@ import Image from 'next/image'
 
 export const revalidate = 60
 
+export async function generateMetadata({ params }) {
+  const data = await fetchAirtableTable('news')
+
+  const decodedSlug = decodeURIComponent(params.slug)
+
+  const news = data.find((n) => n.slug === decodedSlug)
+
+  return {
+    title: `${news.title} - Kamu Vicdanı`,
+    description: news.description,
+  }
+}
+
 export default async function News({ params }) {
   const data = await fetchAirtableTable('news')
 
