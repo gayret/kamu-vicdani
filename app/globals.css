@@ -118,3 +118,16 @@ p {
 .location-svg {
   margin-right: 0.2rem;
 }
+
+.visit-counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.visit-counter-img {
+  width: max-content;
+  height: 40px;
+  border-radius: 0.5rem;
+}
