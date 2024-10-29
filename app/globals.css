@@ -127,7 +127,7 @@ p {
 }
 
 .visit-counter-img {
-  width: max-content;
+  width: auto;
   height: auto;
-  border-radius: 0.5rem;
+  border-radius: 0.4rem;
 }

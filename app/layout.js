@@ -14,8 +14,8 @@ export default function RootLayout({ children }) {
         <header>
           <Link href='/'>
             <h2>Kamu Vicdanı</h2>
+            <p>Halkın vicdanını sızlatan olaylar, failler ve akıbetleri</p>
           </Link>
-          <p>Halkın vicdanını sızlatan olaylar, failler ve akıbetleri</p>
         </header>
 
         <main>{children}</main>
