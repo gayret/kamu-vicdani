@@ -17,9 +17,9 @@
   transition: all 0.2s;
 }
 
-.news-item:hover {
+.news-item:hover:not(.static-widget) {
   box-shadow: 0 0 8px skyblue;
-  transform: translateY(2px);
+  transform: translateY(-1px);
 }
 
 .news-item p {

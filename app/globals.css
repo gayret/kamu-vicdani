@@ -113,6 +113,8 @@ p {
 
 .static-widget {
   border-color: transparent;
+  box-shadow: none;
+  background-color: transparent;
 }
 
 .location-svg {
