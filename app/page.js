@@ -41,7 +41,7 @@ export default async function Home() {
         <div className='news-item static-widget'>
           <p>Haber eklemek isterseniz, haberin platformda bulunup bulunmadığını kontrol edin.</p>
           <Search data={data} />
-          <p>Eğer aradığınız haber platformda yer almıyorsa oluşturabilirsiniz.</p>
+          <p>Eğer aradığınız haber platformda yer almıyorsa ekleyebilirsiniz.</p>
           <Link
             href='https://airtable.com/appGCdm8zSGJP5ydL/pagSAXkdbeAxobZu0/form'
             className='btn'
