@@ -18,7 +18,7 @@ export default function About() {
       </p>
       <p>Böylece suçluların başlarına gelenlerin takibini kolaylaştırır.</p>
       <p>
-        Ve tüm bu gelişmelerin halk tarafından kolayca öğrenmesini sağlar. Bu sayede biraz olsun
+        Ve tüm bu gelişmelerin halk tarafından kolayca öğrenilmesini sağlar. Bu sayede biraz olsun
         vicdanları rahatlatır.
       </p>
 
