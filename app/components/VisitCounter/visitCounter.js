@@ -1,6 +1,5 @@
 'use client'
 import { usePathname } from 'next/navigation'
-import Image from 'next/image'
 
 export default function VisitCounter() {
   const pathname = usePathname()
@@ -11,13 +10,7 @@ export default function VisitCounter() {
 
   return (
     <div className='visit-counter'>
-      <Image
-        className='visit-counter-img'
-        src={imageSourceGenerator()}
-        alt='visit-counter'
-        width={40}
-        height={40}
-      />
+      <img className='visit-counter-img' src={imageSourceGenerator()} alt='visit-counter' />
       <span>Sayfanın şimdiye kadar görüntülenme sayısı</span>
     </div>
   )
