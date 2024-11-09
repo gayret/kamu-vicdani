@@ -1,6 +1,6 @@
 import './globals.css'
-import Link from 'next/link'
-import VisitCounter from './components/VisitCounter/visitCounter'
+import Header from './components/layout/Header'
+import Footer from './components/layout/Footer'
 
 export const metadata = {
   title: 'Kamu Vicdanı',
@@ -11,42 +11,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body>
-        <header>
-          <Link href='/'>
-            <h2>Kamu Vicdanı</h2>
-            <p>Halkın vicdanını sızlatan olaylar, failler ve akıbetleri</p>
-          </Link>
-        </header>
-
+        <Header />
         <main>{children}</main>
-
-        <footer>
-          <VisitCounter />
-          <ul className='links'>
-            <li>
-              <Link href='/'>Haberler</Link>
-            </li>
-
-            <li>
-              <Link href='/about'>Hakkımızda</Link>
-            </li>
-
-            <li>
-              <Link href='/disclaimers'>Sorumluluk reddi beyanı</Link>
-            </li>
-
-            <li>
-              <Link href='/contact'>İletişim</Link>
-            </li>
-          </ul>
-          <p>
-            Kamu Vicdanı, içerikleri{' '}
-            <Link href='https://github.com/gayret/kamu-vicdani'>
-              ziyaretçiler tarafından sağlanan
-            </Link>{' '}
-            özgür bir platformdur.
-          </p>
-        </footer>
+        <Footer />
       </body>
     </html>
   )
