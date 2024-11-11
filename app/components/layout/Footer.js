@@ -1,3 +1,4 @@
+import AnitSayac from '../AnitSayac/AnitSayac'
 import VisitCounter from '../VisitCounter/visitCounter'
 import Link from 'next/link'
 
@@ -22,6 +23,10 @@ export default function Footer() {
           <Link href='/contact'>İletişim</Link>
         </li>
       </ul>
+      <section className='similar-platforms'>
+        <h3>Benzer platformlar</h3>
+        <AnitSayac />
+      </section>
       <p>
         Kamu Vicdanı, içerikleri{' '}
         <Link href='https://github.com/gayret/kamu-vicdani'>ziyaretçiler tarafından sağlanan</Link>{' '}
