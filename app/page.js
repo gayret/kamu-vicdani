@@ -5,7 +5,7 @@ import Link from 'next/link'
 import locationSvg from './img/location-sign.svg'
 import Image from 'next/image'
 
-export const revalidate = 60
+export const revalidate = 604800
 
 export default async function Home() {
   const data = await fetchAirtableTable('news')
